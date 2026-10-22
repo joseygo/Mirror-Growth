@@ -13,10 +13,6 @@ user profiles and segmentation — **no SQL, no dependencies**.
 3. Enter your database address — that is all it takes to see the dashboards
    (connect **read-only**; Mirror never writes to your database).
 
-> First launch may show Windows SmartScreen ("Windows protected your PC").
-> This is normal for an indie project without a code-signing certificate.
-> Click **More info** → **Run anyway**.
-
 ## Privacy — nothing ever leaves your machine
 
 - Mirror connects **only** to your own database, using connection strings you
