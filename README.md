@@ -1,24 +1,40 @@
 # Mirror
 
-面向增长分析的数据库直查看板：连上你的 MySQL / PostgreSQL / StarRocks，即刻得到订单观察、新用户数据、用户画像与分层——不写 SQL，不装依赖。
+A database-backed dashboard for growth analysis: point Mirror at your MySQL /
+PostgreSQL / StarRocks and instantly get order tracking, new-user metrics,
+user profiles and segmentation — **no SQL, no dependencies**.
 
-## 下载与运行
+## Download & run (Windows 10 / 11)
 
-1. 从右侧 [Releases](../../releases) 下载最新版的 `mirror.exe`（Windows 64 位，单文件免安装）
-2. 双击运行，浏览器会自动打开连接页（http://127.0.0.1:8765）
-3. 填入数据库地址即可出看板（只读连接，绝不写入业务库）
+1. Get the latest `mirror.exe` from the
+   [Releases](../../releases) page — single file, no installer.
+2. Double-click it. Your browser automatically opens the connection page at
+   `http://127.0.0.1:8765`.
+3. Enter your database address — that is all it takes to see the dashboards
+   (connect **read-only**; Mirror never writes to your database).
 
-> 首次运行如出现 Windows SmartScreen 提示：点「更多信息」→「仍要运行」。
-> （exe 未购买代码签名证书，属正常现象，放心继续使用。）
+> First launch may show Windows SmartScreen ("Windows protected your PC").
+> This is normal for an indie project without a code-signing certificate.
+> Click **More info** → **Run anyway**.
 
-## 环境要求
+## Privacy — nothing ever leaves your machine
 
-- Windows 10 / 11（64 位）
-- 数据库：MySQL 5.7+ 或 PostgreSQL 12+，仅需只读账号
+- Mirror connects **only** to your own database, using connection strings you
+  enter yourself.
+- The connection is **strictly read-only** — Mirror never writes a single row
+  to your business database.
+- There is **no upload pipeline at all**: no telemetry, no CDN, no analytics,
+  no remote server — the binary contains nothing that phones home.
+- All derived metrics, session state and preferences stay in local storage on
+  your own computer.
 
-## 版权声明
+## Requirements
 
-©Josey和AI朋友们，保留所有权利。
+- Windows 10 / 11 (64-bit)
+- A database: MySQL 5.7+ or PostgreSQL 12+, with a read-only account
 
-本软件当前以可执行文件形式**免费发布、暂未开源**。允许个人及企业内部使用；
-未经许可，不得反编译、二次打包分发或用于商业转售。
+## License
+
+© Josey. Mirror is distributed as a free executable for personal and
+internal business use; decompiling, repackaging or commercial redistribution
+is not permitted.
