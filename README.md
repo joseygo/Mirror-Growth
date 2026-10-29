@@ -38,7 +38,16 @@ new-user metrics, user profiles and segmentation — **no SQL, no dependencies**
 ## What's new
 
 <!-- CHANGELOG:START -->
-- **[v1.0.7](https://github.com/joseygo/Mirror-Growth/releases/tag/v1.0.7)** — feat(release): tag 说明多行正文直达 README 子条目与 Release 正文——更新内容单一来源
+- **[v1.0.7](https://github.com/joseygo/Mirror-Growth/releases/tag/v1.0.7)** — 漏斗两期对比、诊断去年同比、日期显示星期
+  - 漏斗支持两期对比：任选两个日期区间，转化率变化一眼看清
+  - 诊断页尾部新增「去年同比」两卡：已支付金额 / 新增用户数对照去年同期
+  - 选中日期后显示星期，如「数据截至 2026-09-19（周六）」
+  - 渠道单列扩充：知乎/头条/QQ 空间/贴吧/豆瓣/即刻/脉脉/虎扑等国内二线社区 8 档
+  - B 站常见叫法全收录：小破站/破站/哔哩/biliapp/b23.tv
+  - 城市名归一：「北京/北京市」不再拆成两行；地名归一支持国际（日语都道府県、拉丁写法、缩写别名）
+  - 渠道名支持英文/日文显示名，数据认标准名、界面按语言切换
+  - 新增英文版 README
+  - 修复英文系统下启动输出导致的崩溃（构建链路加固）
 - **[v1.0.5](https://github.com/joseygo/Mirror-Growth/releases/tag/v1.0.5)** — 一句话取数 SQL 生成增强 + 前端语法修复
 - **[v1.0.4](https://github.com/joseygo/Mirror-Growth/releases/tag/v1.0.4)** — AI智答升级——右下角悬浮问答、规则式画图（折线/饼图/条形）、对话历史与失败重试、本地执行日志
 - **[v1.0.3](https://github.com/joseygo/Mirror-Growth/releases/tag/v1.0.3)** — 业务节奏内联进经营诊断（金额结论下方）+ 同比行 + 因子树 + 异动日入口
